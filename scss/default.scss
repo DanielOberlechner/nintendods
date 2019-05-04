@@ -1,4 +1,8 @@
-@import "./_mixins.scss";
+@import "mixins.scss";
+
+body, html {
+    height: 100%;
+  }
 
 #main {
     background-color: #96CEB4;
@@ -48,7 +52,7 @@
 }
 
 .navbar-logo {
-    @include background-image("../img/icon.png");
+    @include background-image("../img/icon.png", 300px, contain);
     height: 75px;
 }
 
@@ -68,34 +72,34 @@
     margin-bottom: 50px;
 }
 
-.content-showoff-img {
-    @include background-image("../img/allofit.png");
-    height: 250px;
-}
+// .content-showoff-img {
+//     @include background-image("../img/allofit.png");
+//     height: 250px;
+// }
 
-.article1-img {
-    @include background-image("../img/YoutubeAutoplay.png");
-    height: 300px;
-}
+// .article1-img {
+//     @include background-image("../img/YoutubeAutoplay.png");
+//     height: 300px;
+// }
 
-.article2-img {
-    @include background-image("../img/YoutubeSidebar.png");
-    height: 300px;
-}
+// .article2-img {
+//     @include background-image("../img/YoutubeSidebar.png");
+//     height: 300px;
+// }
 
-.article3-img {
-    @include background-image("../img/YoutubeEndscreen.png");
-    height: 300px;
-}
+// .article3-img {
+//     @include background-image("../img/YoutubeEndscreen.png");
+//     height: 300px;
+// }
 
-.article4-img {
-    @include background-image("../img/YoutubeMerchandise.png");
-    height: 300px;
-}
+// .article4-img {
+//     @include background-image("../img/YoutubeMerchandise.png");
+//     height: 300px;
+// }
 
 .footer-copyright {
     color: #006C8C;
-    font-size: 15px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -115,4 +119,20 @@
     height: 100px;
 }
 
-@import "_responsive.scss";
+// New things
+.devices {
+    @include background-image("../img/all3devices.jpg", 350px, contain);
+    margin-bottom: 100px;
+}
+
+.content-text {
+    font-family: 'Roboto', sans-serif, 'Times New Roman';
+    font-size: 30px;
+}
+
+.twitter {
+    @include background-image("../img/twitter.jpg", 350px);
+}
+
+
+@import "responsive.scss";

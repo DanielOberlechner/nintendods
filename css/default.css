@@ -16,16 +16,21 @@
 
 .h1 {
   color: #133046;
+  font-size: 50px;
 }
 
 .h2 {
   color: #15959F;
-  font-size: 2.5rem;
+  font-size: 50px;
 }
 
 h6 {
   color: #008A6E;
   color: #006C8C;
+}
+
+body, html {
+  height: 100%;
 }
 
 #main {
@@ -76,6 +81,7 @@ h6 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+  height: 300px;
   height: 75px;
 }
 
@@ -94,49 +100,9 @@ h6 {
   margin-bottom: 50px;
 }
 
-.content-showoff-img {
-  background-image: url("../img/allofit.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 250px;
-}
-
-.article1-img {
-  background-image: url("../img/YoutubeAutoplay.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 300px;
-}
-
-.article2-img {
-  background-image: url("../img/YoutubeSidebar.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 300px;
-}
-
-.article3-img {
-  background-image: url("../img/YoutubeEndscreen.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 300px;
-}
-
-.article4-img {
-  background-image: url("../img/YoutubeMerchandise.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 300px;
-}
-
 .footer-copyright {
   color: #006C8C;
-  font-size: 15px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -155,6 +121,28 @@ h6 {
 
 .footer-background {
   height: 100px;
+}
+
+.devices {
+  background-image: url("../img/all3devices.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 350px;
+  margin-bottom: 100px;
+}
+
+.content-text {
+  font-family: 'Roboto', sans-serif, 'Times New Roman';
+  font-size: 30px;
+}
+
+.twitter {
+  background-image: url("../img/twitter.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 350px;
 }
 
 @media (max-width: 991.98px) {
