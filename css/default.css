@@ -1,19 +1,3 @@
-.spacer-top1 {
-  padding-top: 50px;
-}
-
-.spacer-bottom1 {
-  padding-bottom: 50px;
-}
-
-.spacer-top2 {
-  padding-top: 100px;
-}
-
-.spacer-bottom2 {
-  padding-bottom: 100px;
-}
-
 .h1 {
   color: #133046;
   font-size: 50px;
@@ -29,7 +13,8 @@ h6 {
   color: #006C8C;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
@@ -107,7 +92,8 @@ body, html {
 }
 
 .footer-contact-button {
-  margin: 50px 0;
+  margin-top: 50px 0;
+  margin-bottom: 50px 0;
 }
 
 .fa-twitter {
@@ -138,11 +124,29 @@ body, html {
 }
 
 .twitter {
-  background-image: url("../img/twitter.jpg");
-  background-size: cover;
+  background-image: url("../img/twitter.png");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 350px;
+  height: 200px;
+}
+
+.sd-card-info {
+  font-size: 20px;
+}
+
+.spacerMargin {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.spacerPadding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.spacerBottom {
+  padding-bottom: 100px;
 }
 
 @media (max-width: 991.98px) {

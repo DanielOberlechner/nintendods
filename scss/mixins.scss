@@ -6,24 +6,22 @@
     height: $heigth;
 }
 
-@mixin spacer($margin) {
-    margin: $margin;
+@mixin spacerTop($top) {
+    padding-top: $top;
 }
 
-.spacer-top1 {
-    padding-top: 50px;
+@mixin spacerBottom($bottom) {
+    padding-bottom: $bottom;
 }
 
-.spacer-bottom1 {
-    padding-bottom: 50px;
+@mixin spacerMargin($margin) {
+    margin-top: $margin;
+    margin-bottom: $margin;
 }
 
-.spacer-top2 {
-    padding-top: 100px;
-}
-
-.spacer-bottom2 {
-    padding-bottom: 100px;
+@mixin spacerPadding($padding) {
+    padding-top: $padding;
+    padding-bottom: $padding;
 }
 
 .h1 {
@@ -36,10 +34,11 @@
     font-size: 50px;
 }
 
-//color scheme
-// https://color.adobe.com/de/Port1-color-theme-10979693/edit/?copy=true&base=2&rule=Custom&selected=3&name=Kopie%20von%20Port1&mode=rgb&rgbvalues=0.07450980392156863,0.18823529411764706,0.27450980392156865,0.08235294117647059,0.5843137254901961,0.6235294117647059,0.9450980392156862,0.8941176470588236,0.7019607843137254,0.9254901960784314,0.592156862745098,0.4392156862745098,0.7803921568627451,0.25098039215686274,0.17647058823529413&swatchOrder=0,1,2,3,4.
-// Besondere Farbtoene:
 h6 {
     color: #008A6E;
     color: #006C8C;
 }
+
+//color scheme
+// https://color.adobe.com/de/Port1-color-theme-10979693/edit/?copy=true&base=2&rule=Custom&selected=3&name=Kopie%20von%20Port1&mode=rgb&rgbvalues=0.07450980392156863,0.18823529411764706,0.27450980392156865,0.08235294117647059,0.5843137254901961,0.6235294117647059,0.9450980392156862,0.8941176470588236,0.7019607843137254,0.9254901960784314,0.592156862745098,0.4392156862745098,0.7803921568627451,0.25098039215686274,0.17647058823529413&swatchOrder=0,1,2,3,4.
+// Besondere Farbtoene:

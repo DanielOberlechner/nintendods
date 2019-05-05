@@ -1,8 +1,9 @@
 @import "mixins.scss";
 
-body, html {
+body,
+html {
     height: 100%;
-  }
+}
 
 #main {
     background-color: #96CEB4;
@@ -34,12 +35,14 @@ body, html {
     display: block;
     width: 5px;
     z-index: 9999;
-    background: rgba(225,75,75,.85);
+    background: rgba(225, 75, 75, .85);
 }
+
 #scroller {
     width: 1px;
     position: relative;
 }
+
 #header-background {
     // height: 100px;
     // line-height: 100px;
@@ -59,6 +62,7 @@ body, html {
 .navbar-link {
     color: #C7402D;
     font-size: 2rem;
+
     &:hover {
         background-color: white;
         -webkit-transition: background-color 1000ms linear;
@@ -72,31 +76,6 @@ body, html {
     margin-bottom: 50px;
 }
 
-// .content-showoff-img {
-//     @include background-image("../img/allofit.png");
-//     height: 250px;
-// }
-
-// .article1-img {
-//     @include background-image("../img/YoutubeAutoplay.png");
-//     height: 300px;
-// }
-
-// .article2-img {
-//     @include background-image("../img/YoutubeSidebar.png");
-//     height: 300px;
-// }
-
-// .article3-img {
-//     @include background-image("../img/YoutubeEndscreen.png");
-//     height: 300px;
-// }
-
-// .article4-img {
-//     @include background-image("../img/YoutubeMerchandise.png");
-//     height: 300px;
-// }
-
 .footer-copyright {
     color: #006C8C;
     font-size: 25px;
@@ -104,12 +83,13 @@ body, html {
 }
 
 .footer-contact-button {
-    @include spacer(50px 0);
+    @include spacerMargin(50px 0);
 }
 
 .fa-twitter {
     font-size: 48px;
     color: dodgerblue;
+
     &:hover {
         color: darken(dodgerblue, 15%);
     }
@@ -131,8 +111,27 @@ body, html {
 }
 
 .twitter {
-    @include background-image("../img/twitter.jpg", 350px);
+    @include background-image("../img/twitter.png", 200px, contain);
 }
 
+.sd-card-info {
+    font-size: 20px;
+}
+
+.spacerMargin {
+    @include spacerMargin(100px);
+}
+
+.spacerPadding {
+    @include spacerPadding(100px);
+}
+
+.spacerBottom {
+    @include spacerBottom(100px);
+}
+
+.spacerTop {
+    @include spacerTop(100px);
+}
 
 @import "responsive.scss";
