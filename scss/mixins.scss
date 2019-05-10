@@ -24,19 +24,8 @@
     padding-bottom: $padding;
 }
 
-.h1 {
-    color: #133046;
-    font-size: 50px;
-}
-
-.h2 {
-    color: #15959F;
-    font-size: 50px;
-}
-
-h6 {
-    color: #008A6E;
-    color: #006C8C;
+@mixin Paralax($img) {
+    @include background-image($img, 100%, cover)
 }
 
 //color scheme

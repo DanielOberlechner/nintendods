@@ -47,7 +47,7 @@ html {
     // height: 100px;
     // line-height: 100px;
     // padding-bosttom: 150px;
-    background-color: #006C8C;
+    background-color: #11D182;
 }
 
 .header {
@@ -55,7 +55,7 @@ html {
 }
 
 .navbar-logo {
-    @include background-image("../img/icon.png", 300px, contain);
+    @include background-image("../img/icon.png", 300px, cover);
     height: 75px;
 }
 
@@ -76,12 +76,6 @@ html {
     margin-bottom: 50px;
 }
 
-.footer-copyright {
-    color: #006C8C;
-    font-size: 25px;
-    text-align: center;
-}
-
 .footer-contact-button {
     @include spacerMargin(50px 0);
 }
@@ -95,14 +89,39 @@ html {
     }
 }
 
-.footer-background {
-    height: 100px;
+// New things
+// .devices {
+//     @include background-image("../img/all3devices.jpg", 350px, contain);
+//     margin-bottom: 100px;
+// }
+
+.h1 {
+    color: gold;
+    font-size: 60px !important;
+    @extend .niceFont;
 }
 
-// New things
-.devices {
-    @include background-image("../img/all3devices.jpg", 350px, contain);
-    margin-bottom: 100px;
+.h2 {
+    color: black;
+    font-size: 40px !important;
+    @extend .niceFont;
+}
+
+h6 {
+    color: #008A6E;
+    color: #006C8C;
+}
+
+
+.niceFont {
+    font-family: Aldrich, sans-serif;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.header-background {
+    background-color: tomato;
+    color: cornsilk;
 }
 
 .content-text {
@@ -126,6 +145,10 @@ html {
     @include spacerPadding(100px);
 }
 
+.spacerPadding200 {
+    @include spacerPadding(200px);
+}
+
 .spacerBottom {
     @include spacerBottom(100px);
 }
@@ -133,5 +156,47 @@ html {
 .spacerTop {
     @include spacerTop(100px);
 }
+
+.paralaxFooter {
+    @include Paralax("../img/paralax.jpg");
+    background-attachment: fixed;
+}
+
+.paralaxHeader {
+    @include Paralax("../img/all3devices.jpg");
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: dodgerblue;
+}
+
+.footer-copyright {
+    color: ivory;
+    font-size: 25px;
+    text-align: center;
+}
+
+.btn-info {
+    background-color: orangered;
+    &:hover {
+        background-color: tomato;
+    }
+}
+
+.nintendods {
+    @include background-image("../img/niceDisplay.png", 500px, contain)
+}
+
+.footer-title {
+    color: crimson;
+    background-color: gold;
+    
+}
+
+// .reverse {
+//     unicode-bidi: bidi-override;
+//     direction: rtl;
+//   }
 
 @import "responsive.scss";
