@@ -10,8 +10,9 @@
     <title>Nintendo DS - by Daniel Oberlechner</title>
     <!-- START CSS FILES START -->
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
     <!-- Das neueste kompilierte und minimierte CSS -->
     <link rel="icon" href="./img/icon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -22,7 +23,7 @@
     <!-- jQuery (wird für Bootstrap JavaScript-Plugins benötigt) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
-    <script src="./scripts/site.js"></script>
+    <script src="./js/scripts.js"></script>
     <!-- Unterstützung für Media Queries und HTML5-Elemente in IE8 über HTML5 shim und Respond.js -->
     <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -38,12 +39,10 @@
     <!-- Google Tag Manager (noscript) -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122496717-1"></script> -->
-    <script></script>
-
     <!-- End Google Tag Manager (noscript) -->
 
-    <div id="indicator"></div>
-    <div id="scroller"></div>
+    <!-- <div id="indicator"></div>
+    <div id="scroller"></div> -->
 
     <header id="header-background" class="">
         <div class="container-fluid">
@@ -64,98 +63,114 @@
         </div>
     </header>
 
-    <main id="main" class="spacerBottom">
+    <main id="main" class="spacerBottom paralaxHeader">
         <div class="container">
             <div class="row">
-                <div class="col-12 rounded devices spacer"></div>
-                <div id="plugin" class="col-12 content-title h1 text-center">Nitendo 3DS - Hacking</div>
-                <div class="col-12 content-text">Hallo liebe/r Leser/in,
-                    mein Name ist Daniel und ich bin Informatiker als Beruf.
-                    Meine Interessen liegen im Bereich der Technik und alles was dazu gehört.
+                <div class="col-12 spacerMargin"></div>
+                <div class="header-background">
+                    <div id="plugin" class="col-12 content-title h1 text-center">Nitendo 3DS - Hacking</div>
+                    <div class="col-12 content-text niceFont">Hallo liebe/r Leser/in,
+                        mein Name ist Daniel und ich bin Informatiker als Beruf.
+                        Meine Interessen liegen im Bereich der Technik und alles was dazu gehört.
 
-                    Ein Projekt mit welchem ich mich kürzlich befasst habe, ist der Jailbreak (knacken des Systems) des
-                    Nitendo 2DS/3DS. Mein Bruder hat sich erst kürzlich einen „New Nitendo 2DS“ gekauft, und wollte
-                    wissen, ob man nicht das Gerät etwas verbessern könnte. Daraufhin habe ich mich im Netz umgesehen,
-                    und verschiedene Möglichkeiten entdeckt, den DS zu „hacken“.
+                        Ein Projekt mit welchem ich mich kürzlich befasst habe, ist der Jailbreak (knacken des Systems)
+                        des
+                        Nitendo 2DS/3DS. Mein Bruder hat sich erst kürzlich einen „New Nitendo 2DS“ gekauft, und wollte
+                        wissen, ob man nicht das Gerät etwas verbessern könnte. Daraufhin habe ich mich im Netz
+                        umgesehen,
+                        und verschiedene Möglichkeiten entdeckt, den DS zu „hacken“.
+                    </div>
                 </div>
             </div>
     </main>
 
     <article id="functions" class="spacerPadding">
         <div class="container">
-            <h2 class="h2 text-center functions">Welcher Nintendo DS kann geknackt werden?</h2>
-            <div class="row distance">
-                <div class="col-md-6 align-self-center">
-                    <div class="article-text content-text">
-                        <ul>
-                            <li>Nitendo 2DS</li>
-                            <li>New Nitendo 2DS XL</li>
-                            <br>
-                            <li>Nitendo 3DS</li>
-                            <li>Nitendo 3DS XL</li>
-                            <li>New Nitendo 3DS</li>
-                            <li>New Nitendo 3DS XL</li>
-                            <br>
-                            <p class="sd-card-info">Im Prinzip jeder Nitendo DS welcher eine SD Karten Slot hat. (Egal ob Micro SD oder normale SD Karte)</p>   
-                        </ul>
+            <div class="row">
+                <h2 class="col-12 h2 text-center functions">Welcher Nintendo DS kann geknackt werden?</h2>
+                <div class="distance">
+                    <div class="col-md-6">
+                        <div class="article-text content-text niceFont">
+                            <ul>
+                                <li>Nitendo 2DS</li>
+                                <li>New Nitendo 2DS XL</li>
+                                <br>
+                                <li>Nitendo 3DS</li>
+                                <li>Nitendo 3DS XL</li>
+                                <li>New Nitendo 3DS</li>
+                                <li>New Nitendo 3DS XL</li>
+                                <br>
+                                <p class="sd-card-info">Im Prinzip jeder Nitendo DS welcher eine SD Karten Slot hat.
+                                    (Egal
+                                    ob Micro SD oder normale SD Karte)</p>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="nintendods"></div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="image-section2"></div>
-                </div>
-            </div>
-            <div>
+                <div></div>
     </article>
 
     <article id="rateme" class="spacerPadding">
         <div class="container">
-            <h2 class="h2 text-center">Rate Me ...</h2>
+            <h2 class="h2 text-center">Firmware Version</h2>
             <div class="row">
-                <div class="col-lg-12 distance">
-                    <div class="article-text">If you like my plugin it would be super awesome if you could rate my
-                        plugin
-                        in the chrome store. A good rating helps to get more attention which I would look forward to.
-                        Thanks for your time.</div>
+                <div class="col-12 distance">
+                    <div class="article-text niceFont">Für den Nitendo 3DS gibt es verschiedene Firmware Versionen.
+                        Diese sind
+                        dafür da, Bugs und Fehler im System zu beheben oder neue Features nachzurüsten. Am Anfang konnte
+                        man nur Systeme „hacken“ welche eine bestimmte Firmware Version besaßen. Mittlerweile sind die
+                        „Hacks“ aber soweit fortgeschritten, sodass sich jede Firmware Version knacken lässt.</div>
                 </div>
             </div>
         </div>
     </article>
 
-    <footer id="contact" class="footer-background">
+    <div id="contact" class="footer-background">
         <div class="no-more spacerPadding">
             <div class="container">
                 <div class="row">
-                    <div class="footer-title text-center col-12 h2">Never see annoying Youtube recommandations again
+                    <div class="title text-center col-12 h2">SD-Karte
                     </div>
-                    <div class="footer-text col-12">You can use your time for sure for better things as spending your
-                        time on Youtube. Use your free time to
-                        learn something new in life or spend it with you family or whatever your thing is. This plugin
-                        will help
-                        you to spend less Time on Youtube. Use your time for something useful.</div>
+                    <div class="footer-text col-12 niceFont">Damit man Spiele installieren kann, oder auch Themen und
+                        sonstiges,
+                        braucht es eine SD Karte mit mindestens 16 Gigabyte. Ich empfehle aber eine mit einer Größe von
+                        mindestens 32 Gigabyte oder noch besser 64 Gigabyte zu kaufen. Je mehr Platz wie du hast, desto
+                        mehr Spiele und Anwendungen hast du nachher auf dem Handheld 3DS Platz. Ein Spiel braucht
+                        durchschnittlich 1-3 Gigabyte an Platz auf der SD-Karte.</div>
                 </div>
             </div>
         </div>
-        <div id="greetings" class="spacerPadding">
+        <div id="greetings" class="spacerPadding200 paralaxFooter">
             <div class="container">
-                <div class="row">
-                    <div id="" class="footer-btn-title col-12 h2 text-center">Bist du an meinem Angebot interessiert
-                        oder hast noch weitere Fragen? Dann melde dich doch gerne bei mir</div>
+                <div class="row ">
+                    <div id="" class="footer-title col-12 h2 text-center">Bist du an meinem Angebot
+                        interessiert
+                        oder hast noch weitere Fragen?<br> Dann melde dich doch gerne bei mir per Mail oder Twitter:
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <footer class="spacerPadding">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <a href="mailto:danieloberlechner@hotmail.de">
-                        <div class="btn btn-info footer-contact-button">Kontaktiere mich per Mail</div>
+                    <!-- <a class="" href="mailto:danieloberlechner@hotmail.de"> -->
+                    <a class="" href="mailto:danieloberlechner&commat;hotmail&period;de">
+                        <div class="btn btn-info footer-contact-button niceFont">Kontaktiere mich per Mail</div>
                     </a>
+                    <!--ToDo Check if Email is securly hidden from Scrapers-->
                 </div>
-                <div class="col-12 text-center">
+                <div class="offset-4 col-4 text-center">
                     <a href="https://twitter.com/danielthehok" target="_blank">
-                        <div class="col-12 twitter"></div>
+                        <div class="twitter"></div>
                     </a>
                 </div>
-                <div class="col-12 footer-copyright spacer-top1">A Daniel Oberlechner Production &copy; 2019</div>
+                <div class="col-12 footer-copyright spacer-top1 niceFont">A Daniel Oberlechner Production &copy; 2019
+                </div>
             </div>
         </div>
         </div>
