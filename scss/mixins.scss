@@ -1,4 +1,4 @@
-@mixin background-image($url,  $heigth, $size: cover) {
+@mixin background-image($url,  $heigth: auto, $size: cover) {
     background-image: url($url);
     background-size: $size;
     background-repeat: no-repeat;
@@ -25,7 +25,7 @@
 }
 
 @mixin Paralax($img) {
-    @include background-image($img, 100%, cover)
+    @include background-image($img)
 }
 
 //color scheme
